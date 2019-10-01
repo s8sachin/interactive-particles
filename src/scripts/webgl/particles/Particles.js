@@ -51,7 +51,6 @@ export default class Particles {
 			canvas.height = this.height;
 			ctx.scale(1, -1);
 			ctx.drawImage(img, 0, 0, this.width, this.height * -1);
-
 			const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 			originalColors = Float32Array.from(imgData.data);
 
@@ -59,7 +58,7 @@ export default class Particles {
 				if (originalColors[i * 4 + 0] > threshold) numVisible++;
 			}
 
-			// console.log('numVisible', numVisible, this.numPoints);
+			console.log('numVisible', numVisible, this.numPoints);
 		}
 
 		const uniforms = {
@@ -134,7 +133,7 @@ export default class Particles {
 	}
 
 	initHitArea() {
-		const geometry = new THREE.PlaneGeometry(this.width, this.height, 1, 1);
+		const geometry = new THREE.PlaneGeometry(this.width, this.height, 3, 3);
 		const material = new THREE.MeshBasicMaterial({ color: 0xFFFFFF, wireframe: true, depthTest: false });
 		material.visible = false;
 		this.hitArea = new THREE.Mesh(geometry, material);

@@ -12,11 +12,15 @@ export default class WebGLView {
 		this.app = app;
 
 		this.samples = [
-			'images/sample-01.png',
-			'images/sample-02.png',
-			'images/sample-03.png',
-			'images/sample-04.png',
-			'images/sample-05.png',
+			// 'https://i.ibb.co/d5w7wMZ/IMG-8761.jpg',
+			'images/2.png',
+			// 'images/sample-01.png',
+			// 'images/sample-02.png',
+			// 'images/sample-03.png',
+			// 'images/sample-04.png',
+			// 'images/sample-05.png',
+			'images/3.jpg',
+			// 'https://resizeimage.net/viewimg/uTpVybREW9A0vk3e/yE2Zv/img_8761.jpg',
 		];
 
 		this.initThree();

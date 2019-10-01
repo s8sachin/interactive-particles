@@ -5,7 +5,7 @@ import { easeOutQuad, easeInOutQuad, easeOutSine, easeInOutSine } from '../../ut
 export default class TouchTexture {
 	constructor(parent) {
 		this.parent = parent;
-		this.size = 64;
+		this.size = 24;
 		this.maxAge = 120;
 		this.radius = 0.15;
 		this.trail = [];

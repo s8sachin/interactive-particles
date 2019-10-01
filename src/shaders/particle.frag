@@ -21,8 +21,8 @@ void main() {
 
 	// circle
 	float border = 0.3;
-	float radius = 0.5;
-	float dist = radius - distance(uv, vec2(0.5));
+	float radius = 0.4;
+	float dist = radius - distance(uv, vec2(0.2));
 	float t = smoothstep(0.0, border, dist);
 
 	// final color
